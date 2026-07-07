@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aurora Control UI</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <nav class="sidebar" aria-label="Workspace">
+        <div class="brand">AC</div>
+        <a class="active" href="#overview">Overview</a>
+        <a href="#insights">Insights</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#settings">Settings</a>
+      </nav>
+
+      <section class="main">
+        <header class="header">
+          <div>
+            <p class="eyebrow">Aurora Control UI</p>
+            <h1>Focused workspace for live product operations.</h1>
+          </div>
+          <button id="syncButton">Sync now</button>
+        </header>
+
+        <section id="overview" class="hero-card">
+          <div>
+            <p class="eyebrow">System health</p>
+            <strong>92%</strong>
+            <p>Signals are stable across acquisition, activation, and retention workflows.</p>
+          </div>
+          <div class="meter" aria-hidden="true">
+            <span></span>
+          </div>
+        </section>
+
+        <section id="insights" class="cards">
+          <article>
+            <span class="tag teal">Growth</span>
+            <h2>24.8k</h2>
+            <p>Active users this cycle</p>
+          </article>
+          <article>
+            <span class="tag violet">Quality</span>
+            <h2>4.9</h2>
+            <p>Average satisfaction score</p>
+          </article>
+          <article>
+            <span class="tag amber">Queue</span>
+            <h2>18</h2>
+            <p>Tasks waiting for review</p>
+          </article>
+        </section>
+
+        <section id="tasks" class="table-card">
+          <div class="section-title">
+            <h2>Priority Work</h2>
+            <span>Updated today</span>
+          </div>
+          <div class="row">
+            <span>Launch readiness</span>
+            <strong>On track</strong>
+          </div>
+          <div class="row">
+            <span>Design QA</span>
+            <strong>Review</strong>
+          </div>
+          <div class="row">
+            <span>Content handoff</span>
+            <strong>Ready</strong>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
