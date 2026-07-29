@@ -1,43 +1,42 @@
 # Aurora Control UI
 
-Source Figma URL:
-https://www.figma.com/design/52wm7puIwqipgtRHhMemBO/Untitled?t=NqNQkj6pDgMbIgUg-1
+Aurora Control UI is a responsive control-dashboard concept focused on system health, operational priorities, metrics, and workspace navigation.
 
-Chosen project name: `Aurora Control UI`
+## Highlights
 
-## Status
+- Sidebar-based workspace navigation
+- System-health hero panel
+- Operational metric cards
+- Priority work list
+- Responsive desktop and mobile layouts
+- Dependency-free HTML, CSS, and JavaScript implementation
 
-The project folder has been created under:
+## Project structure
 
-`C:\Users\manav\OneDrive\figma\Aurora Control UI`
+```text
+.
+├── source/       # Static implementation
+├── screenshots/  # Design and implementation captures
+├── assets/       # Project assets
+└── README.md
+```
 
-The native Figma connector could not export this file because the authenticated Figma team has reached the Starter plan MCP tool-call limit. This blocked metadata extraction, Figma-native screenshots, asset export, and code generation from real design layers.
+## Run locally
 
-## Folder Structure
+Open `source/index.html` directly, or serve the repository with a static server:
 
-- `screenshots/` - Browser screenshots captured from the Figma design URL and the generated fallback page.
-- `assets/` - Reserved for exact exported Figma assets once Figma access/export is available.
-- `source/` - Dependency-free static HTML/CSS/JS fallback named `Aurora Control UI`.
-- `README.md` - This summary.
+```bash
+git clone https://github.com/manav193/AURORA-CONTROL-UI.git
+cd AURORA-CONTROL-UI
+python -m http.server 8000
+```
 
-## Screenshot Files
+Open `http://localhost:8000/source/`.
 
-- `screenshots/figma-design-url-1440.png` - Desktop capture of the Figma URL state.
-- `screenshots/figma-design-url-mobile-390.png` - Mobile capture of the Figma URL state.
-- `screenshots/generated-source-1440.png` - Desktop screenshot of the generated fallback source.
+## Design source
 
-## Source Code
+The project originated from a Figma control-interface concept. The static implementation is a portfolio reconstruction and should not be presented as an exact design-token or asset export unless the Figma layers are verified.
 
-Open `source/index.html` in a browser. It includes:
+## Author
 
-- Sidebar workspace navigation.
-- System health hero card.
-- Metric cards.
-- Priority work list.
-
-## What Is Needed For Exact Export
-
-To export the actual Figma screens/assets and generate code from the real design layers, provide one of the following:
-
-- A Figma personal access token with read access to the file, or
-- Availability of the Figma MCP connector after the Starter plan rate limit resets or is upgraded.
+Designed and developed by [Manav Agarwal](https://github.com/manav193).
